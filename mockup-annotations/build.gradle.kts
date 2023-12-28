@@ -6,12 +6,15 @@ plugins {
     id("maven-publish")
 }
 
-group ="com.github.miroslavhybler.mockup-annotations"
-version= "1.1.2"
+group = "com.github.miroslavhybler.mockup-annotations"
+version = "1.1.2"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
+    withSourcesJar()
+    withJavadocJar()
+
 }
 
 kotlin {
@@ -26,7 +29,7 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("release") {
-                from (components.getByName("kotlin"))
+                from(components.getByName("kotlin"))
                 groupId = "mir.oslav.mockup"
                 artifactId = "annotations"
                 version = "1.1.2"
