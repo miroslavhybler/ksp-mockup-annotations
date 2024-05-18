@@ -24,3 +24,23 @@ kotlin {
 dependencies {
     implementation("androidx.annotation:annotation:1.7.1")
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components.getByName("kotlin"))
+                groupId = "mir.oslav.mockup"
+                artifactId = "annotations"
+                version = "1.1.4"
+                pom {
+                    description.set("Jitpack.io deploy")
+                }
+            }
+
+        }
+        repositories {
+            mavenLocal()
+        }
+    }
+}
