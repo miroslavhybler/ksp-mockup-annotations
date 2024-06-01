@@ -30,9 +30,9 @@ afterEvaluate {
         publications {
             create<MavenPublication>("release") {
                 from(components.getByName("kotlin"))
-                groupId = "mir.oslav.mockup"
+                groupId = "com.mockup"
                 artifactId = "annotations"
-                version = "1.1.4"
+                version = "1.1.6"
                 pom {
                     description.set("Jitpack.io deploy")
                 }
