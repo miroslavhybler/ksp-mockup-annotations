@@ -1,6 +1,6 @@
 @file:Suppress("RedundantConstructorKeyword", "unused", "RedundantVisibilityModifier")
 
-package mir.oslav.mockup.annotations
+package com.mockup.annotations
 
 import androidx.annotation.IntRange
 

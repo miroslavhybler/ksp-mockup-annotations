@@ -5,7 +5,7 @@
     "RedundantConstructorKeyword"
 )
 
-package mir.oslav.mockup.annotations
+package com.mockup.annotations
 
 
 /**
