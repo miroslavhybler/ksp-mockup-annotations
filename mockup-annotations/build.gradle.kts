@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.github.miroslavhybler.mockup-annotations"
-version = "1.1.7"
+version = "1.1.8"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -22,7 +22,7 @@ kotlin {
 }
 
 dependencies {
-    implementation("androidx.annotation:annotation:1.7.1")
+    implementation("androidx.annotation:annotation:1.8.2")
 }
 
 afterEvaluate {
@@ -32,7 +32,7 @@ afterEvaluate {
                 from(components.getByName("kotlin"))
                 groupId = "com.github.miroslavhybler"
                 artifactId = "mockup-annotations"
-                version = "1.1.6"
+                version = "1.1.8"
                 pom {
                     description.set("Jitpack.io deploy")
                 }
