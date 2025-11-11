@@ -32,7 +32,7 @@ afterEvaluate {
                 from(components.getByName("kotlin"))
                 groupId = "com.github.miroslavhybler"
                 artifactId = "mockup-annotations"
-                version = "1.2.2"
+                version = "1.2.4"
                 pom {
                     description.set("Jitpack.io deploy")
                 }
