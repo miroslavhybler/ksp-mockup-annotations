@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.github.miroslavhybler.mockup-annotations"
-version = "1.2.2"
+version = "1.2.4"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
