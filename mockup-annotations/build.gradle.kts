@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.github.miroslavhybler.mockup-annotations"
-version = "1.2.1"
+version = "1.2.2"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -32,7 +32,7 @@ afterEvaluate {
                 from(components.getByName("kotlin"))
                 groupId = "com.github.miroslavhybler"
                 artifactId = "mockup-annotations"
-                version = "1.2.1"
+                version = "1.2.2"
                 pom {
                     description.set("Jitpack.io deploy")
                 }
