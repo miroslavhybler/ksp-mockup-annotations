@@ -14,8 +14,12 @@ package com.mockup.annotations
  * created on 01.06.2024
  * @since 1.1.7
  */
-@Target(AnnotationTarget.PROPERTY)
-@Retention(AnnotationRetention.SOURCE)
+@Target(
+    allowedTargets = [
+        AnnotationTarget.PROPERTY
+    ]
+)
+@Retention(value= AnnotationRetention.SOURCE)
 @MustBeDocumented
 public annotation class IgnoreOnMockup constructor() {
 }
