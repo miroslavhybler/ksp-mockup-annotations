@@ -10,15 +10,15 @@ group = "com.github.miroslavhybler.mockup-annotations"
 version = "2.0.0-alpha01"
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
     withSourcesJar()
     withJavadocJar()
 
 }
 
 kotlin {
-    jvmToolchain(jdkVersion = 8)
+    jvmToolchain(jdkVersion = 11)
 }
 
 dependencies {
