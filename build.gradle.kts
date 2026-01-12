@@ -3,10 +3,10 @@
 plugins {
     id("java-library")
     id("org.jetbrains.kotlin.jvm")
-    id("maven-publish")
+    `maven-publish`
 }
 
-group = "com.github.miroslavhybler.mockup-annotations"
+group = "com.github.miroslavhybler"
 version = "2.0.0-alpha01"
 
 java {
@@ -14,7 +14,6 @@ java {
     targetCompatibility = JavaVersion.VERSION_11
     withSourcesJar()
     withJavadocJar()
-
 }
 
 kotlin {
@@ -29,7 +28,7 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("release") {
-                from(components.getByName("kotlin"))
+                from(components.getByName("java"))
                 groupId = "com.github.miroslavhybler"
                 artifactId = "mockup-annotations"
                 version = "2.0.0-alpha01"
